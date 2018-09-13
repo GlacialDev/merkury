@@ -1,16 +1,19 @@
 <template lang="pug">
-  div.wrapper
+  div.wrapper.wrapper--first
     div.container
       Header
+      Central
 </template>
 
 <script>
 import Header from './Header'
+import Central from './Central'
 
 export default {
   name: 'First',
   components: {
-    Header
+    Header,
+    Central
   },
   data () {
     return {
@@ -37,5 +40,7 @@ export default {
 
   .container {
     width: 85%;
+    display: flex;
+    flex-direction: column;
   }
 </style>

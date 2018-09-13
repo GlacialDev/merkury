@@ -89,6 +89,8 @@ export default {
   }
 
   &_link {
+    font-weight: 300;
+    font-size: 18px;
     transition: 0.3s;
     color: #fff;
     text-decoration: none;
