@@ -17,7 +17,5 @@ export default {
 </script>
 
 <style>
-#app {
-  
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 </style>

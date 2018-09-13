@@ -23,6 +23,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .wrapper {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     width: 100%;
