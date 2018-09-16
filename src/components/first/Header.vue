@@ -7,9 +7,9 @@
     div.header_links
       div.nav.header_nav
         ul.nav_list
-          each item in ['Features', 'Pricing', 'Blog', 'Contact']
+          each item in [{title: 'Features', link: '#'}, {title: 'Pricing', link: '#'}, {title: 'Blog', link: '#'}, {title: 'Contact', link: '#'}]
             li.nav_item
-              a(href="#").nav_link #{item}
+              a(href=item.link).nav_link #{item.title}
       a(href="#").header_login-btn Login
 </template>
 

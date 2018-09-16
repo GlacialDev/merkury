@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <First/>
+    <Second/>
   </div>
 </template>
 
 <script>
 import 'normalize.css'
 import First from './components/first/First'
+import Second from './components/second/Second'
 
 export default {
   name: 'App',
   components: {
-    First
+    First,
+    Second
   }
 }
 </script>

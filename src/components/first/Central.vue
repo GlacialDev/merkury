@@ -6,7 +6,6 @@
         a(href="#").central_start-btn Get started
     div.central_img-wrapper
       img(src="../../assets/first/central.jpg").central_img
-      //- div.central_img-glow
 </template>
         
         
@@ -86,7 +85,6 @@ export default {
     z-index: 10;
     display: inline-block;
     width: 44%;
-    // height: 100%;
   }
 }
 </style>
