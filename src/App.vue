@@ -3,6 +3,7 @@
     <First/>
     <Second/>
     <Third/>
+    <Fourth/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@ import 'normalize.css'
 import First from './components/first/First'
 import Second from './components/second/Second'
 import Third from './components/third/Third'
+import Fourth from './components/fourth/Fourth'
 
 export default {
   name: 'App',
   components: {
     First,
     Second,
-    Third
+    Third,
+    Fourth
   }
 }
 </script>

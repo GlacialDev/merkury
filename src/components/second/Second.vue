@@ -9,7 +9,7 @@
           v-bind:text="feature.text"
         )
       div.requires
-        div.requires_title All You need is browser
+        div.requires_title All You need is a browser!
         div.requires_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         div.requires_text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.  
         ul.requires_list
@@ -88,7 +88,7 @@ export default {
 }
 
 .requires {
-  width: 42%;
+  width: 45%;
   padding-left: 6.5%;
   padding-bottom: 200px;
 

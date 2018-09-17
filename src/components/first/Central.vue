@@ -68,10 +68,10 @@ export default {
     &:after {
       content: " ";
       position: absolute;
-      right: 28%;
+      right: 24%;
       z-index: 1;
       display: inline-block;
-      width: 44%;
+      width: 52%;
       height: 100%;
       box-shadow:0 0 80px #274790;
       opacity: 0.46;
@@ -81,10 +81,10 @@ export default {
 
   &_img {
     position: absolute;
-    right: 28%;
+    right: 24%;
     z-index: 10;
     display: inline-block;
-    width: 44%;
+    width: 52%;
   }
 }
 </style>

@@ -22,7 +22,7 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 18.75%;
+    width: 24%;
     margin: 0px 20px 50px 50px;
     
     &_img {
