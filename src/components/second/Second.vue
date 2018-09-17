@@ -117,9 +117,6 @@ export default {
     padding-bottom: 15px;
     padding-right: 13.5%;
 
-    &-text {
-    }
-
     &-icon {
       margin-right: 20px;
       min-width: 30px;

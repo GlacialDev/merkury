@@ -10,9 +10,6 @@
 export default {
   name: 'Feature',
   props: ['url', 'name', 'text'],
-  components: {
-
-  },
   data () {
     return {}
   }
