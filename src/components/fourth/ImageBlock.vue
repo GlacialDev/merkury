@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
   .image-wrapper {
     width: 100%;
-    height: 60%;
+    min-height: 71%;
     background-image: url('../../assets/fourth/aksonometry.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@ export default {
 
     &--first {
       top: 25%;
-      left: 49%;
+      left: 48.7%;
       transform: rotate(180deg);
 
       .pointer_info {
@@ -57,8 +57,8 @@ export default {
     }
 
     &--second {
-      top: 63%;
-      left: 52.2%;
+      top: 57%;
+      left: 51.7%;
 
       .pointer_info {
         top: -25px;

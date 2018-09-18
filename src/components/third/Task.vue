@@ -1,10 +1,10 @@
 <template lang="pug">
   div.task
-    div.task_letter-icon 
+    div.task_letter-icon
       div.task_letter {{letter}}
-    div.task_description 
+    div.task_description
       div.task_title {{title}}
-      div.task_info 
+      div.task_info
         div( v-if="state === 'WiP'" :style="{'backgroundImage': 'url(' + require('../../assets/third/WiP.png') + ')'}").task_state-img
         div( v-else-if="state === 'done'" :style="{'backgroundImage': 'url(' + require('../../assets/third/done.png') + ')'}").task_state-img
         div( v-else-if="state === 'late'" :style="{'backgroundImage': 'url(' + require('../../assets/third/late.png') + ')'}").task_state-img

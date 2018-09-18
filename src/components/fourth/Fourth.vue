@@ -2,9 +2,9 @@
   div.wrapper.wrapper--fourth
     div.container
       div.title Powerfull PSD Template
-      div.text 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      div.text
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       ImageBlock
 </template>
 
@@ -38,13 +38,6 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-
-  .title {
-    font-weight: 100;
-    font-size: 60px;
-    color: #0e1a35;
-    padding-top: 100px;
   }
 
   .text {

@@ -4,6 +4,7 @@
     <Second/>
     <Third/>
     <Fourth/>
+    <Fifth/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import First from './components/first/First'
 import Second from './components/second/Second'
 import Third from './components/third/Third'
 import Fourth from './components/fourth/Fourth'
+import Fifth from './components/fifth/Fifth'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     First,
     Second,
     Third,
-    Fourth
+    Fourth,
+    Fifth
   }
 }
 </script>
