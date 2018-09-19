@@ -32,6 +32,7 @@ export default {
     font-size: 60px;
     font-weight: 100;
     color: #fff;
+    margin-bottom: 10px;
   }
 
   &_slogan-below {
@@ -43,8 +44,8 @@ export default {
 
   &_btn {
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding-top: 84px;
+    padding-bottom: 90px;
   }
 
   &_start-btn {
@@ -53,7 +54,7 @@ export default {
     text-align: center;
     font-weight: 700;
     color: #fff;
-    padding: 14px 56px;
+    padding: 14px 60px;
     background-color: #5584ff;
     border-radius: 28px;
     &:hover {

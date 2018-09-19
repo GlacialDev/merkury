@@ -37,14 +37,16 @@ export default {
   align-items: center;
   color: #0e1a35;
   background-color: #fff;
-  min-width: 390px;
-  max-width: 390px;
+  width: 100%;
   min-height: 100px;
   border: 1px solid #414f70;
+  padding-right: 30px;
+  padding-left: 30px;
 
   &_letter-icon {
-    width: 40px;
-    margin-left: 30px;
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 40px;
     max-height: 40px;
     text-align: center;
     background-color: #5584ff;
@@ -75,9 +77,10 @@ export default {
   }
 
   &_state-img {
-    height: 15px;
-    width: 15px;
+    min-height: 15px;
+    min-width: 15px;
     margin-right: 7px;
+    background-repeat: no-repeat;
   }
 
   &_state-time {
@@ -87,7 +90,7 @@ export default {
 
   &_more-info {
     display: block;
-    margin-right: 30px;
+    margin-left: 30px;
     border: 4px solid #8492af;
     border-radius: 50%;
     position: relative;

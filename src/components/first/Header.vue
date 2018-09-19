@@ -54,7 +54,7 @@ export default {
 }
 
 .logo {
-  padding: 6vh 20px;
+  padding: 6vh 10px;
 
   &_link {
     display: flex;
@@ -65,13 +65,13 @@ export default {
 
   &_img {
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   &_txt {
     display: inline-block;
     color: #ffffff;
-    font-size: 32px;
+    font-size: 42px;
   }
 }
 
@@ -80,7 +80,8 @@ export default {
 
   &_list {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
   }
 
   &_item {

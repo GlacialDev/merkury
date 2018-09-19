@@ -21,82 +21,84 @@
 </template>
 
 <script>
-import SliderImage from "./SliderImage";
+import SliderImage from './SliderImage';
 
 export default {
-  name: "Third",
-  components: {
-    SliderImage
-  },
-  data() {
-    return {};
-  }
+	name: 'Third',
+	components: {
+		SliderImage
+	},
+	data() {
+		return {};
+	}
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .wrapper {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 68.2vh;
-  background-color: #0e1a35;
-  background-image: url("../../assets/first/graph.jpg");
-  background-position: center 30%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 68.2vh;
+	background-color: #0e1a35;
+	background-image: url('../../assets/first/graph.jpg');
+	background-position: center 30%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .container {
-  width: 85%;
-  padding: 30px 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	width: 85%;
+	padding: 30px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .slider {
-  &_info-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
+	&_info-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
 
-  &_info {
-    width: 62.5%;
-  }
+	&_info {
+		width: 62.5%;
+    padding-bottom: 15px;
+	}
 
-  &_title {
-    font-weight: 100;
-    font-size: 60px;
-    color: #fff;
-    padding-bottom: 45px;
-  }
+	&_title {
+		font-weight: 100;
+		font-size: 60px;
+		color: #fff;
+		padding-bottom: 45px;
+	}
 
-  &_text {
-    font-weight: 300;
-    font-size: 18px;
-    color: #8492af;
-    padding-bottom: 40px;
-  }
+	&_text {
+		font-weight: 300;
+		font-size: 18px;
+		color: #8492af;
+		padding-bottom: 40px;
+	}
 }
 
 .controller {
-  margin-top: 10px;
-  
-  &_svg {
-    transition: 0.3s;
-  }
-  &:hover {
-    .controller_svg {
-      fill: #fff;
-    }
-  }
-  &--left {
-    margin-right: 20px;
-  }
+	margin-top: 10px;
+
+	&_svg {
+		transition: 0.3s;
+	}
+	&:hover {
+		.controller_svg {
+			fill: #fff;
+		}
+	}
+	&--left {
+		margin-right: 20px;
+	}
 }
 </style>

@@ -22,8 +22,24 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 24%;
-    margin: 0px 20px 50px 50px;
+    width: 25%;
+    padding-bottom: 20px;
+    position: relative;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      border: 1px solid #dadee7;
+      width: 70%;
+      top: 12%;
+      right: -60%;
+    }
+
+    &:nth-of-type(3) {
+      &:after {
+        content: none;
+      }
+    }
     
     &_img {
       width: 100px;
