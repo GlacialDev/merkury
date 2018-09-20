@@ -36,6 +36,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .wrapper {
   overflow: hidden;
 	font-family: 'Roboto', sans-serif;
@@ -52,7 +54,7 @@ export default {
 
 .container {
 	width: 85%;
-	padding: 30px 0px;
+	padding: rem(30px) rem(0px);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -68,26 +70,26 @@ export default {
 
 	&_info {
 		width: 62.5%;
-    padding-bottom: 15px;
+    padding-bottom: rem(15px);
 	}
 
 	&_title {
 		font-weight: 100;
-		font-size: 60px;
+		font-size: rem(60px);
 		color: #fff;
-		padding-bottom: 45px;
+		padding-bottom: rem(45px);
 	}
 
 	&_text {
 		font-weight: 300;
-		font-size: 18px;
+		font-size: rem(18px);
 		color: #8492af;
-		padding-bottom: 40px;
+		padding-bottom: rem(40px);
 	}
 }
 
 .controller {
-	margin-top: 10px;
+	margin-top: rem(10px);
 
 	&_svg {
 		transition: 0.3s;
@@ -98,7 +100,7 @@ export default {
 		}
 	}
 	&--left {
-		margin-right: 20px;
+		margin-right: rem(20px);
 	}
 }
 </style>

@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
 @font-face {
   font-family: 'Roboto';
   src: url(./assets/fonts/Roboto-Bold-webfont.woff) format('woff');
@@ -77,6 +77,7 @@ html {
 	font-family: sans-serif;
 	cursor: default;
 	height: 100%;
+  font-size: 16px;
 }
 
 body {

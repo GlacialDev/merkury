@@ -24,6 +24,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -40,21 +42,21 @@ export default {
     transition: 0.3s;
     text-align: center;
     display: inline-block;
-    padding: 16px 44px;
-    border: 1px solid #192b56;
-    border-radius: 32px;
+    padding: rem(16px) rem(44px);
+    border: rem(1px) solid #192b56;
+    border-radius: rem(32px);
     color: #5584ff;
     text-decoration: none;
-    margin-left: 24px;
+    margin-left: rem(24px);
 
     &:hover {
-      border: 1px solid #5584ff;      
+      border: rem(1px) solid #5584ff;      
     }
   }
 }
 
 .logo {
-  padding: 6vh 10px;
+  padding: 6vh rem(10px);
 
   &_link {
     display: flex;
@@ -65,13 +67,13 @@ export default {
 
   &_img {
     display: inline-block;
-    padding-right: 15px;
+    padding-right: rem(15px);
   }
 
   &_txt {
     display: inline-block;
     color: #ffffff;
-    font-size: 42px;
+    font-size: rem(42px);
   }
 }
 
@@ -80,18 +82,18 @@ export default {
 
   &_list {
     list-style-type: none;
-    margin-bottom: 8px;
-    margin-right: 8px;
+    margin-bottom: rem(8px);
+    margin-right: rem(8px);
   }
 
   &_item {
     display: inline-block;
-    padding: 0px 24px;
+    padding: rem(0px) rem(24px);
   }
 
   &_link {
     font-weight: 300;
-    font-size: 18px;
+    font-size: rem(18px);
     transition: 0.3s;
     color: #fff;
     text-decoration: none;

@@ -1,4 +1,4 @@
-# mercury
+# Merkury
 
 > A Vue.js project
 

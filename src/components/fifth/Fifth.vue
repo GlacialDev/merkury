@@ -105,6 +105,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .wrapper {
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
@@ -124,10 +126,10 @@ export default {
 .title {
 	text-align: center;
 	font-weight: 100;
-	font-size: 60px;
+	font-size: rem(60px);
 	color: #0e1a35;
-	margin-top: 50px;
-	margin-bottom: 90px;
+	margin-top: rem(50px);
+	margin-bottom: rem(90px);
 }
 
 .pricing {
@@ -135,8 +137,8 @@ export default {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding: 0px 105px;
-	margin-bottom: 70px;
+	padding: rem(0px) rem(105px);
+	margin-bottom: rem(70px);
 	width: 100%;
 }
 
@@ -144,15 +146,15 @@ export default {
 	text-align: center;
 	width: 55%;
 	font-weight: 300;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: rem(18px);
+	line-height: rem(30px);
 	color: #8492af;
-	margin-bottom: 60px;
+	margin-bottom: rem(60px);
 }
 
 .join {
 	text-align: center;
-	padding-bottom: 100px;
+	padding-bottom: rem(100px);
 
 	&-btn {
 		position: relative;
@@ -161,9 +163,9 @@ export default {
 		text-align: center;
 		font-weight: 700;
 		color: #fff;
-		padding: 15px 70px;
+		padding: rem(15px) rem(70px);
 		background-color: #5584ff;
-		border-radius: 28px;
+		border-radius: rem(28px);
 		&:hover {
 			background-color: #264592;
 		}
@@ -173,7 +175,7 @@ export default {
 		&:after {
 		content: ' ';
 		position: absolute;
-		border: 1px solid #dadee7;
+		border: rem(1px) solid #dadee7;
 		width: 110%;
 		top: 50%;
 		right: -120%;
@@ -182,7 +184,7 @@ export default {
 		&:before {
 		content: ' ';
 		position: absolute;
-		border: 1px solid #dadee7;
+		border: rem(1px) solid #dadee7;
 		width: 110%;
 		top: 50%;
 		left: -120%;

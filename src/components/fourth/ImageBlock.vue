@@ -28,6 +28,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
   .image-wrapper {
     width: 100%;
     min-height: 71%;
@@ -49,8 +51,8 @@ export default {
       transform: rotate(180deg);
 
       .pointer_info {
-        top: -60px;
-        left: 415px;
+        top: rem(-60px);
+        left: rem(415px);
         text-align: left;
         transform: rotate(180deg);
       }
@@ -61,8 +63,8 @@ export default {
       left: 51.7%;
 
       .pointer_info {
-        top: -25px;
-        left: 415px;
+        top: rem(-25px);
+        left: rem(415px);
         text-align: right;
       }
     }
@@ -70,10 +72,10 @@ export default {
     &_circle {
       z-index: 10;
       position: absolute;
-      top: 7.5px;
-      left: 7.5px;
-      width: 30px;
-      height: 30px;
+      top: rem(7.5px);
+      left: rem(7.5px);
+      width: rem(30px);
+      height: rem(30px);
       border-radius: 50%;
       background-color: #5584ff;
     }
@@ -82,8 +84,8 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
-      width: 46px;
-      height: 46px;
+      width: rem(46px);
+      height: rem(46px);
       border-radius: 50%;
       background-color: #5584ff;
       opacity: 0.5;
@@ -92,28 +94,28 @@ export default {
     &_line {
       z-index: 1;
       position: absolute;
-      top: 21px;
-      left: 21px;
-      border: 2px solid #5584ff;
-      width: 650px;
+      top: rem(21px);
+      left: rem(21px);
+      border: rem(2px) solid #5584ff;
+      width: rem(650px);
     }
 
     &_info {
       position: absolute;
-      width: 256px;
+      width: rem(256px);
     }
 
     &_title {
       color: #0e1a35;
       font-weight: 700;
-      font-size: 24px;
-      padding-bottom: 45px;
+      font-size: rem(24px);
+      padding-bottom: rem(45px);
     }
 
     &_text {
       color: #8492af;
       font-weight: 300;
-      font-size: 18px;
+      font-size: rem(18px);
     }
   }
 </style>

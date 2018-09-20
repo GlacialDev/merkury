@@ -31,6 +31,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .task {
   display: flex;
   flex-direction: row;
@@ -38,16 +40,16 @@ export default {
   color: #0e1a35;
   background-color: #fff;
   width: 100%;
-  min-height: 100px;
-  border: 1px solid #414f70;
-  padding-right: 30px;
-  padding-left: 30px;
+  min-height: rem(100px);
+  border: rem(1px) solid #414f70;
+  padding-right: rem(30px);
+  padding-left: rem(30px);
 
   &_letter-icon {
-    max-width: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    max-height: 40px;
+    max-width: rem(40px);
+    min-width: rem(40px);
+    min-height: rem(40px);
+    max-height: rem(40px);
     text-align: center;
     background-color: #5584ff;
     border-radius: 50%;
@@ -55,17 +57,17 @@ export default {
   }
 
   &_letter {
-    font-size: 23px;
-    padding: 7px 0px;
+    font-size: rem(23px);
+    padding: rem(7px) rem(0px);
   }
 
   &_description {
-    margin-left: 20px;
+    margin-left: rem(20px);
     flex-grow: 1;
   }
 
   &_title {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
     color: #0e1a35;
   }
@@ -73,44 +75,44 @@ export default {
   &_info {
     display: flex;
     flex-direction: row;
-    margin-top: 9px;
+    margin-top: rem(9px);
   }
 
   &_state-img {
-    min-height: 15px;
-    min-width: 15px;
-    margin-right: 7px;
+    min-height: rem(15px);
+    min-width: rem(15px);
+    margin-right: rem(7px);
     background-repeat: no-repeat;
   }
 
   &_state-time {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
   }
 
   &_more-info {
     display: block;
-    margin-left: 30px;
-    border: 4px solid #8492af;
+    margin-left: rem(30px);
+    border: rem(4px) solid #8492af;
     border-radius: 50%;
     position: relative;
     background-color: currentColor;
     &:before {
       content: "";
       position: absolute;
-      border: 4px solid #8492af;
+      border: rem(4px) solid #8492af;
       border-radius: 50%;
-      top: -12px;
-      margin: -4px;
+      top:rem(-12px);
+      margin: rem(-4px);
       background-color: currentColor;
     }
     &:after {
       content: "";
       position: absolute;
-      border: 4px solid #8492af;
+      border: rem(4px) solid #8492af;
       border-radius: 50%;
-      top: 12px;
-      margin: -4px;
+      top: rem(12px);
+      margin: rem(-4px);
       background-color: currentColor;
     }
   }

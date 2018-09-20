@@ -78,12 +78,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .slider_image {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: rem(15px);
 }
 
 .column {
@@ -92,18 +94,18 @@ export default {
   flex-direction: column;
 
   &--right {
-    padding-left: 15px;
+    padding-left: rem(15px);
   }
 
   &_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 32px;
+    padding-bottom: rem(32px);
   }
 
   &_name {
-    font-size: 30.5px;
+    font-size: rem(30.5px);
     font-weight: 400;
     color: #fff;
 
@@ -112,9 +114,9 @@ export default {
     }
 
     &-arrow {
-      width: 14px;
-      height: 25px;
-      margin-right: 28px;
+      width: rem(14px);
+      height: rem(25px);
+      margin-right: rem(28px);
       display: inline-block;
     }
   }
@@ -122,20 +124,20 @@ export default {
 
 .task_list {
   &--left{
-    margin-right: 40px;
+    margin-right: rem(40px);
   }
   &--right {
-    margin-right: 20px;
+    margin-right: rem(20px);
   }
 }
 
 .task_item {
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
 
   &--left:nth-of-type(3) {
     position: relative;
-    margin-top: 30px;
-    margin-left: 28px;
+    margin-top: rem(30px);
+    margin-left: rem(28px);
 
     &::after {
       position: absolute;
@@ -171,11 +173,11 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100px;
-  border: 3px dashed #3d4966;
+  min-height: rem(100px);
+  border: rem(3px) dashed #3d4966;
 
   &-text {
-    font-size: 20px;
+    font-size: rem(20px);
     font-weight: 400;
     color: #8492af;
   }

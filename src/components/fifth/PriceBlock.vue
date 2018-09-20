@@ -26,42 +26,44 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .price {
 	transition: 0.3s;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 350px;
-	max-width: 350px;
-	box-shadow: 0 0 50px #d3d3d3;
-	margin-bottom: 30px;
+	min-width: rem(350px);
+	max-width: rem(350px);
+	box-shadow: 0 0 rem(50px) #d3d3d3;
+	margin-bottom: rem(30px);
 
 	&:hover {
-		box-shadow: 0 0 50px #8e8e8e;
+		box-shadow: 0 0 rem(50px) #8e8e8e;
 	}
 
 	&_title {
-		padding-top: 45px;
-		padding-bottom: 32px;
+		padding-top: rem(45px);
+		padding-bottom: rem(32px);
 		text-transform: uppercase;
 		font-weight: 400;
-		font-size: 24px;
+		font-size: rem(24px);
 		color: #0e1a35;
 	}
 
 	&_cost {
 		font-weight: 700;
-		font-size: 72px;
+		font-size: rem(72px);
 		color: #0e1a35;
-		padding-bottom: 43px;
+		padding-bottom: rem(43px);
 
 		&-dol {
-			font-size: 40px;
+			font-size: rem(40px);
 		}
 
 		&-time {
 			font-weight: 300;
-			font-size: 24px;
+			font-size: rem(24px);
 			color: #8492af;
 		}
 	}
@@ -78,19 +80,19 @@ export default {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-bottom: 17px;
+		padding-left: rem(50px);
+		padding-right: rem(50px);
+		padding-bottom: rem(17px);
 
 		&:last-child {
-			padding-bottom: 45px;
+			padding-bottom: rem(45px);
 		}
 	}
 
 	&-img {
-		min-width: 24px;
-		min-height: 24px;
-		margin-right: 15px;
+		min-width: rem(24px);
+		min-height: rem(24px);
+		margin-right: rem(15px);
 	}
 }
 </style>

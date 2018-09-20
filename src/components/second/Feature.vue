@@ -18,18 +18,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
   .feature {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 25%;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
     position: relative;
 
     &:after {
       content: ' ';
       position: absolute;
-      border: 1px solid #dadee7;
+      border: rem(1px) solid #dadee7;
       width: 70%;
       top: 12%;
       right: -60%;
@@ -42,8 +44,8 @@ export default {
     }
     
     &_img {
-      width: 100px;
-      height: 100px;
+      width: rem(100px);
+      height: rem(100px);
       align-self: center;
       background-position: center center;
       background-repeat: no-repeat;
@@ -52,17 +54,17 @@ export default {
 
     &_name {
       font-weight: 700;
-      font-size: 24px;
+      font-size: rem(24px);
       color: #0e1a35;
-      padding-top: 50px;
+      padding-top: rem(50px);
     }
 
     &_text {
       font-weight: 300;
-      font-size: 18px;
+      font-size: rem(18px);
       color: #a7b1c5;
-      padding-top: 30px;
-      padding-bottom: 50px;
+      padding-top: rem(30px);
+      padding-bottom: rem(50px);
     }
 
     &_btn {
@@ -70,13 +72,13 @@ export default {
       text-align: center;
       display: inline-block;
       min-width: 16%;
-      padding: 16px 0px;
-      border: 1px solid #dadee7;
-      border-radius: 32px;
+      padding: rem(16px) rem(0px);
+      border: rem(1px) solid #dadee7;
+      border-radius: rem(32px);
       color: #0e1a35;
       text-decoration: none;
       &:hover {
-        border: 1px solid #192b56;      
+        border: rem(1px) solid #192b56;      
       }
     }
   }

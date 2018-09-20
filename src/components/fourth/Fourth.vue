@@ -24,6 +24,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .wrapper {
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
@@ -43,16 +45,16 @@ export default {
 
 .text {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: rem(18px);
 	color: #8492af;
-	padding: 50px 0px;
+	padding: rem(50px) rem(0px);
 }
 
 .title {
 	text-align: center;
 	font-weight: 100;
-	font-size: 60px;
+	font-size: rem(60px);
 	color: #0e1a35;
-	margin-top: 100px;
+	margin-top: rem(100px);
 }
 </style>

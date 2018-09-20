@@ -63,6 +63,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .wrapper {
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
@@ -81,7 +83,7 @@ export default {
 }
 
 .features-wrapper {
-	padding: 250px 190px 260px 190px;
+	padding: rem(250px) rem(190px) rem(260px) rem(190px);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -91,20 +93,20 @@ export default {
 .requires {
 	width: 45%;
 	padding-left: 6.5%;
-	padding-bottom: 270px;
+	padding-bottom: rem(270px);
 
 	&_title {
 		font-weight: 100;
-		font-size: 60px;
+		font-size: rem(60px);
 		color: #0e1a35;
-		padding-bottom: 60px;
+		padding-bottom: rem(60px);
 	}
 
 	&_text {
 		font-weight: 300;
-		font-size: 18px;
+		font-size: rem(18px);
 		color: #8492af;
-		padding-bottom: 40px;
+		padding-bottom: rem(40px);
 		padding-right: 13.5%;
 	}
 
@@ -112,16 +114,16 @@ export default {
 		display: flex;
 		align-items: center;
 		font-weight: 300;
-		font-size: 22px;
+		font-size: rem(22px);
 		color: #5584ff;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: rem(15px);
+		padding-bottom: rem(15px);
 		padding-right: 13.5%;
 
 		&-icon {
-			margin-right: 20px;
-			min-width: 30px;
-			min-height: 30px;
+			margin-right: rem(20px);
+			min-width: rem(30px);
+			min-height: rem(30px);
 			background-image: url('../../assets/second/check.png');
 		}
 	}
@@ -130,7 +132,7 @@ export default {
 .planshet {
 	width: 51%;
 	position: absolute;
-	padding-bottom: 120px;
+	padding-bottom: rem(120px);
 	bottom: 0%;
 	right: 0%;
 }

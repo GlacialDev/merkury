@@ -20,8 +20,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .central {
-  padding-top: 65px;
+  padding-top: rem(65px);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -29,23 +31,23 @@ export default {
 
   &_slogan {
     text-align: center;
-    font-size: 60px;
+    font-size: rem(60px);
     font-weight: 100;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 
   &_slogan-below {
     text-align: center;
     font-weight: 300;
-    font-size: 36px;
+    font-size: rem(36px);
     color: #8492af;
   }
 
   &_btn {
     text-align: center;
-    padding-top: 84px;
-    padding-bottom: 90px;
+    padding-top: rem(84px);
+    padding-bottom: rem(90px);
   }
 
   &_start-btn {
@@ -54,9 +56,9 @@ export default {
     text-align: center;
     font-weight: 700;
     color: #fff;
-    padding: 14px 60px;
+    padding: rem(14px) rem(60px);
     background-color: #5584ff;
-    border-radius: 28px;
+    border-radius: rem(28px);
     &:hover {
       background-color: #264592;
     }
@@ -74,7 +76,7 @@ export default {
       display: inline-block;
       width: 52%;
       height: 100%;
-      box-shadow:0 0 80px #274790;
+      box-shadow:0 0 rem(80px) #274790;
       opacity: 0.46;
 
     }

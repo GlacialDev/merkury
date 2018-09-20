@@ -42,12 +42,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../mixins.scss';
+
 .container {
 	width: 85%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-  padding: 0px 95px;
+  padding: rem(0px) rem(95px);
 }
 
 .footer {
@@ -58,17 +60,17 @@ export default {
 
 	&_copyright {
 		font-weight: 300;
-		font-size: 18px;
+		font-size: rem(18px);
 		color: #8492af;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: rem(75px);
+    padding-bottom: rem(75px);
 	}
 }
 
 .nav {
 	display: flex;
 	flex-direction: row;
-  padding-top: 75px;
+  padding-top: rem(75px);
 
 	&_list {
 		list-style-type: none;
@@ -77,12 +79,12 @@ export default {
 
 	&_item {
 		display: inline-block;
-		padding: 0px 24px;
+		padding: rem(0px) rem(24px);
 	}
 
 	&_link {
 		font-weight: 300;
-		font-size: 18px;
+		font-size: rem(18px);
 		transition: 0.3s;
 		color: #8492af;
 		text-decoration: none;
@@ -98,9 +100,9 @@ export default {
     }
 
     &_item {
-      width: 24px;
-      height: 24px;
-      margin-right: 16px;
+      width: rem(24px);
+      height: rem(24px);
+      margin-right: rem(16px);
     }
 
     &_svg {

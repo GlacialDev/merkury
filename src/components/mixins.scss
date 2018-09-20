@@ -1,0 +1,47 @@
+
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+  
+  @mixin w1920_h1080 {
+      @media screen and (max-width: 1920px) {
+          @content;
+      }
+  }
+  
+  @mixin w1680_h1050 {
+      @media screen and (max-width: 1680px) {
+          @content;
+      }
+  }
+  
+  @mixin w1280_h800 {
+      @media screen and (max-width: 1280px) {
+          @content;
+      }
+  }
+  
+  @mixin w1024_h800 {
+      @media screen and (max-width: 1024px) {
+          @content;
+      }
+  }
+  
+  @mixin w800_h600 {
+      @media screen and (max-width: 800px) {
+          @content;
+      }
+  }
+  @mixin w800_h480 {
+      @media screen and (max-width: 800px) {
+          @content;
+      }
+  }
+  
+  @mixin w480_h320 {
+      @media screen and (max-width: 800px) {
+          @content;
+      }
+  }
+  
