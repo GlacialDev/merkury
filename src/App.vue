@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style lang='scss'>
+@import './components/mixins.scss';
+
 @font-face {
   font-family: 'Roboto';
   src: url(./assets/fonts/Roboto-Bold-webfont.woff) format('woff');
@@ -78,6 +80,10 @@ html {
 	cursor: default;
 	height: 100%;
   font-size: 16px;
+
+  @include w1366_h768 {
+    font-size: 13px;
+  }
 }
 
 body {

@@ -83,6 +83,7 @@ export default {
     min-width: rem(15px);
     margin-right: rem(7px);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &_state-time {

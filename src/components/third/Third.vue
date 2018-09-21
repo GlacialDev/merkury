@@ -66,11 +66,27 @@ export default {
 		justify-content: center;
 		align-items: center;
 		width: 50%;
+
+    @include w1366_h768 {
+			width: 40%;
+    }
+
+		@include w1280_h800 {
+			width: 40%;
+		}
 	}
 
 	&_info {
 		width: 62.5%;
-    padding-bottom: rem(15px);
+		padding-bottom: rem(15px);
+		
+    @include w1366_h768 {
+			width: 75%;
+    }
+
+		@include w1280_h800 {
+			width: 75%;
+		}
 	}
 
 	&_title {
@@ -78,6 +94,14 @@ export default {
 		font-size: rem(60px);
 		color: #fff;
 		padding-bottom: rem(45px);
+
+    @include w1366_h768 {
+			font-size: rem(45px);
+    }
+
+		@include w1280_h800 {
+			font-size: rem(45px);
+		}
 	}
 
 	&_text {

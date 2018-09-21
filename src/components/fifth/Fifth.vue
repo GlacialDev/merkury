@@ -130,6 +130,11 @@ export default {
 	color: #0e1a35;
 	margin-top: rem(50px);
 	margin-bottom: rem(90px);
+
+	@include w1366_h768 {
+		margin-top: rem(0px);
+		margin-bottom: rem(45px);
+	}
 }
 
 .pricing {
@@ -140,6 +145,16 @@ export default {
 	padding: rem(0px) rem(105px);
 	margin-bottom: rem(70px);
 	width: 100%;
+
+	@include w1366_h768 {
+		padding: rem(0px) rem(0px);
+		margin-bottom: rem(20px);
+	}
+
+    @include w1280_h800 {
+		padding: rem(0px) rem(0px);
+		margin-bottom: rem(20px);
+    }
 }
 
 .text-after {
@@ -150,6 +165,15 @@ export default {
 	line-height: rem(30px);
 	color: #8492af;
 	margin-bottom: rem(60px);
+
+	@include w1366_h768 {
+		width: 75%;
+	}
+
+	@include w1280_h800 {
+		width: 75%;
+	}
+
 }
 
 .join {
@@ -170,24 +194,22 @@ export default {
 			background-color: #264592;
 		}
 
-	
-
 		&:after {
-		content: ' ';
-		position: absolute;
-		border: rem(1px) solid #dadee7;
-		width: 110%;
-		top: 50%;
-		right: -120%;
+			content: ' ';
+			position: absolute;
+			border: rem(1px) solid #dadee7;
+			width: 110%;
+			top: 50%;
+			right: -120%;
 		}
 
 		&:before {
-		content: ' ';
-		position: absolute;
-		border: rem(1px) solid #dadee7;
-		width: 110%;
-		top: 50%;
-		left: -120%;
+			content: ' ';
+			position: absolute;
+			border: rem(1px) solid #dadee7;
+			width: 110%;
+			top: 50%;
+			left: -120%;
 		}
 	}
 }

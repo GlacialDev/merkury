@@ -88,6 +88,22 @@ export default {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+    @include w1366_h768 {
+			padding: rem(250px) rem(50px) rem(160px) rem(50px);
+		}
+		
+    @include w1024_h768 {
+			padding: rem(160px) rem(50px) rem(120px) rem(50px);
+    }
+
+    @include w1280_h800 {
+			padding: rem(250px) rem(0px) rem(60px) rem(0px);
+    }
+
+    @include w1024_h768 {
+			padding: rem(160px) rem(0px) rem(60px) rem(0px);
+    }
 }
 
 .requires {
@@ -95,11 +111,27 @@ export default {
 	padding-left: 6.5%;
 	padding-bottom: rem(270px);
 
+	@include w1280_h800 {
+		padding-bottom: rem(130px);
+	}
+
+	@include w1024_h768 {
+		padding-bottom: rem(270px);
+	}
+
 	&_title {
 		font-weight: 100;
 		font-size: rem(60px);
 		color: #0e1a35;
 		padding-bottom: rem(60px);
+		
+		@include w1366_h768 {
+			font-size: rem(45px);
+		}
+
+    @include w1280_h800 {
+			font-size: rem(45px);
+    }
 	}
 
 	&_text {
@@ -125,6 +157,7 @@ export default {
 			min-width: rem(30px);
 			min-height: rem(30px);
 			background-image: url('../../assets/second/check.png');
+			background-size: contain;
 		}
 	}
 }
@@ -135,5 +168,13 @@ export default {
 	padding-bottom: rem(120px);
 	bottom: 0%;
 	right: 0%;
+	
+	@include w1366_h768 {
+		padding-bottom: rem(40px);
+	}
+
+	@include w1280_h800 {
+		padding-bottom: rem(40px);
+	}
 }
 </style>

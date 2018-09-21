@@ -58,6 +58,10 @@ export default {
 .logo {
   padding: 6vh rem(10px);
 
+  @include w1366_h768 {
+    padding: 3vh rem(10px);
+  }
+
   &_link {
     display: flex;
     flex-direction: row;

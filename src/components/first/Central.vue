@@ -29,6 +29,18 @@ export default {
   position: relative;
   flex-grow: 1;
 
+  @include w1366_h768 {
+    padding-top: rem(0px);
+  }
+
+  @include w1024_h768 {
+    padding-top: rem(40px);
+  }
+
+  @include w1280_h800 {
+    padding-top: rem(0px);
+  }
+
   &_slogan {
     text-align: center;
     font-size: rem(60px);
@@ -79,6 +91,25 @@ export default {
       box-shadow:0 0 rem(80px) #274790;
       opacity: 0.46;
 
+      @include w1366_h768 {
+        right: 21%;  
+        width: 58%;
+      }
+
+      @include w1024_h768 {
+        right: 17%;
+        width: 66%;
+      }
+
+      @include w1280_h800 {
+        right: 19%;
+        width: 62%;
+      }
+
+      @include w1280_h800 {
+        right: 15%;
+        width: 70%;
+      }
     }
   }
 
@@ -88,6 +119,26 @@ export default {
     z-index: 10;
     display: inline-block;
     width: 52%;
+
+    @include w1366_h768 {
+      right: 21%;  
+      width: 58%;
+    }
+
+    @include w1024_h768 {
+      right: 17%;
+      width: 66%;
+    }
+
+    @include w1280_h800 {
+      right: 19%;
+      width: 62%;
+    }
+
+    @include w1280_h800 {
+      right: 15%;
+      width: 70%;
+    }
   }
 }
 </style>

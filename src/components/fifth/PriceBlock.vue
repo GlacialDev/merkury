@@ -38,6 +38,16 @@ export default {
 	box-shadow: 0 0 rem(50px) #d3d3d3;
 	margin-bottom: rem(30px);
 
+	@include w1366_h768 {
+		min-width: rem(310px);
+		max-width: rem(310px);
+	}
+
+	@include w1280_h800 {
+		min-width: rem(310px);
+		max-width: rem(310px);
+	}
+
 	&:hover {
 		box-shadow: 0 0 rem(50px) #8e8e8e;
 	}
@@ -87,12 +97,23 @@ export default {
 		&:last-child {
 			padding-bottom: rem(45px);
 		}
+
+		@include w1366_h768 {
+			padding-left: rem(20px);
+			padding-right: rem(20px);
+		}
+
+		@include w1280_h800 {
+			padding-left: rem(20px);
+			padding-right: rem(20px);
+		}
 	}
 
 	&-img {
 		min-width: rem(24px);
 		min-height: rem(24px);
 		margin-right: rem(15px);
+		background-size: contain;
 	}
 }
 </style>

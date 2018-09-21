@@ -65,6 +65,7 @@ export default {
       color: #a7b1c5;
       padding-top: rem(30px);
       padding-bottom: rem(50px);
+      flex-grow: 1;
     }
 
     &_btn {

@@ -86,6 +86,14 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: rem(15px);
+  
+  @include w1366_h768 {
+    width: 60%;
+  }
+
+	@include w1280_h800 {
+    width: 60%;
+	}
 }
 
 .column {

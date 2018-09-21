@@ -38,6 +38,14 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+
+    @include w1366_h768 {
+      min-height: 60%;
+    }
+
+    @include w1280_h800 {
+      min-height: 66%;
+    }
   }
 
   .pointer {
@@ -55,6 +63,14 @@ export default {
         left: rem(415px);
         text-align: left;
         transform: rotate(180deg);
+
+        @include w1366_h768 {
+          left: rem(265px);
+        }
+
+        @include w1280_h800 {
+          left: rem(265px);
+        }
       }
     }
 
@@ -66,6 +82,14 @@ export default {
         top: rem(-25px);
         left: rem(415px);
         text-align: right;
+
+        @include w1366_h768 {
+          left: rem(265px);
+        }
+
+        @include w1280_h800 {
+          left: rem(265px);
+        }
       }
     }
 
@@ -98,6 +122,14 @@ export default {
       left: rem(21px);
       border: rem(2px) solid #5584ff;
       width: rem(650px);
+
+      @include w1366_h768 {
+        width: rem(500px);
+      }
+
+      @include w1280_h800 {
+        width: rem(500px);
+      }
     }
 
     &_info {
