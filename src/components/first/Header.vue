@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.header
+  div.header.bounceInDown.wow
     div.logo.header_logo
       a(href="#").logo_link
         img(src="../../assets/first/logo.png").logo_img

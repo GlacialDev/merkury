@@ -1,14 +1,14 @@
 <template lang="pug">
   div.wrapper.wrapper--second
     div.container
-      div.features-wrapper
+      div.features-wrapper.fadeInRight.wow
         Feature(
           v-for="feature in features" :key="feature.key"
           v-bind:url="feature.url"
           v-bind:name="feature.name"
           v-bind:text="feature.text"
         )
-      div.requires
+      div.requires.rollIn.wow
         div.requires_title All You need is a browser!
         div.requires_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         div.requires_text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.  
@@ -19,7 +19,7 @@
           li.requires_item 
             div.requires_item-icon
             div.requires_item-text Ut enim ad minim veniam quis nostrud
-    div.planshet
+    div.planshet.bounceInRight.wow
       img(src='../../assets/second/planshet.png').planshet_image
 </template>
 

@@ -1,10 +1,10 @@
 <template lang="pug">
   div.central
-    h1.central_slogan Grow Your business with Merkury
-    h4.central_slogan-below Your partner in crime!
-    div.central_btn
+    h1.central_slogan.bounceInDown.wow Grow Your business with Merkury
+    h4.central_slogan-below.bounceInDown.wow Your partner in crime!
+    div.central_btn.bounceInDown.wow
         a(href="#").central_start-btn Get started
-    div.central_img-wrapper
+    div.central_img-wrapper.bounceInDown.wow
       img(src="../../assets/first/central.jpg").central_img
 </template>
         
@@ -96,19 +96,14 @@ export default {
         width: 58%;
       }
 
-      @include w1024_h768 {
-        right: 17%;
-        width: 66%;
-      }
-
       @include w1280_h800 {
         right: 19%;
         width: 62%;
       }
 
-      @include w1280_h800 {
-        right: 15%;
-        width: 70%;
+      @include w1024_h768 {
+        right: 17%;
+        width: 66%;
       }
     }
   }
@@ -125,19 +120,14 @@ export default {
       width: 58%;
     }
 
-    @include w1024_h768 {
-      right: 17%;
-      width: 66%;
-    }
-
     @include w1280_h800 {
       right: 19%;
       width: 62%;
     }
 
-    @include w1280_h800 {
-      right: 15%;
-      width: 70%;
+    @include w1024_h768 {
+      right: 17%;
+      width: 66%;
     }
   }
 }

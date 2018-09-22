@@ -1,16 +1,16 @@
 <template lang="pug">
   div.wrapper.wrapper--fifth
     div.container
-      div.title Check our pricing!
-      div.pricing
+      div.title.bounceInLeft.wow Check our pricing!
+      div.pricing.lightSpeedIn.wow
         PriceBlock(
           v-for='plan in plans' :key='plan.key'
           v-bind:title='plan.title'
           v-bind:cost='plan.cost'
           v-bind:features='plan.features'
         )
-      div.text-after Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-      div.join
+      div.text-after.bounceInRight Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+      div.join.fadeIn.wow
         a(href="#").join-btn Join now!
     Footer
 </template>

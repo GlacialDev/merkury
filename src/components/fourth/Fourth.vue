@@ -1,11 +1,11 @@
 <template lang="pug">
   div.wrapper.wrapper--fourth
     div.container
-      div.title Powerfull PSD Template
-      div.text
+      div.title.bounceInRight.wow Powerfull PSD Template
+      div.text.bounceInLeft.wow
         p Lorem ipмуsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      ImageBlock
+      ImageBlock.slideInUp.wow
 </template>
 
 <script>

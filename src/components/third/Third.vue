@@ -1,8 +1,8 @@
 <template lang="pug">
   div.wrapper.wrapper--third
     div.container
-      SliderImage
-      div.slider_info-wrapper
+      SliderImage.fadeInDown.wow
+      div.slider_info-wrapper.fadeInUp.wow
         div.slider_info
           div.slider_title Drag & Drop
           div.slider_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

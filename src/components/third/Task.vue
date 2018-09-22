@@ -40,10 +40,12 @@ export default {
   color: #0e1a35;
   background-color: #fff;
   width: 100%;
-  min-height: rem(100px);
+  // min-height: rem(100px);
   border: rem(1px) solid #414f70;
   padding-right: rem(30px);
   padding-left: rem(30px);
+  padding-top: rem(26px);
+  padding-bottom: rem(26px);
 
   &_letter-icon {
     max-width: rem(40px);
