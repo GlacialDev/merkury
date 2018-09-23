@@ -34,3 +34,27 @@
     }
 }
 
+@mixin w800_h600 {
+    @media screen and (max-width: 800px) and (max-height: 600px) {
+        @content;
+    }
+}
+
+@mixin w600_h800 {
+    @media screen and (max-width: 600px) and (max-height: 800px) {
+        @content;
+    }
+}
+
+@mixin w800_h480 {
+    @media screen and (max-width: 800px) and (max-height: 480px) {
+        @content;
+    }
+}
+
+@mixin w480_h800 {
+    @media screen and (max-width: 480px) and (max-height: 800px) {
+        @content;
+    }
+}
+

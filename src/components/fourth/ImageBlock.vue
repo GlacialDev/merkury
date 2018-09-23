@@ -71,6 +71,11 @@ export default {
         @include w1280_h800 {
           left: rem(265px);
         }
+
+        @include w800_h600 {
+          top: rem(-72px);
+          left: rem(160px);
+        }
       }
     }
 
@@ -90,6 +95,11 @@ export default {
         @include w1280_h800 {
           left: rem(265px);
         }
+
+        @include w800_h600 {
+          top: rem(-32px);
+          left: rem(160px);
+        }
       }
     }
 
@@ -102,6 +112,11 @@ export default {
       height: rem(30px);
       border-radius: 50%;
       background-color: #5584ff;
+
+      @include w800_h600 {
+        width: rem(15px);
+        height: rem(15px);
+      }
     }
     &_circle-big {
       z-index: 1;
@@ -113,6 +128,11 @@ export default {
       border-radius: 50%;
       background-color: #5584ff;
       opacity: 0.5;
+
+      @include w800_h600 {
+        width: rem(30px);
+        height: rem(30px);
+      }
     }
 
     &_line {
@@ -129,6 +149,12 @@ export default {
 
       @include w1280_h800 {
         width: rem(500px);
+      }
+
+      @include w800_h600 {
+        top: rem(13px);
+        left: rem(13px);
+        width: rem(400px);
       }
     }
 

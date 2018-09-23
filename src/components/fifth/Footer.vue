@@ -50,6 +50,10 @@ export default {
 	flex-direction: row;
 	justify-content: space-between;
   padding: rem(0px) rem(95px);
+
+  @include w800_h600 {
+    padding: rem(0px)
+  }
 }
 
 .footer {
@@ -64,6 +68,11 @@ export default {
 		color: #8492af;
     padding-top: rem(75px);
     padding-bottom: rem(75px);
+
+    @include w800_h600 {
+    padding-top: rem(32px);
+    padding-bottom: rem(32px);
+    }
 	}
 }
 

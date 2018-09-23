@@ -47,6 +47,11 @@ export default {
     font-weight: 100;
     color: #fff;
     margin-bottom: rem(10px);
+
+		@include w800_h600 {
+      margin-top: rem(32px);
+      font-size: rem(40px);
+		}
   }
 
   &_slogan-below {
@@ -54,12 +59,21 @@ export default {
     font-weight: 300;
     font-size: rem(36px);
     color: #8492af;
+
+		@include w800_h600 {
+      font-size: rem(26px);
+		}
   }
 
   &_btn {
     text-align: center;
     padding-top: rem(84px);
     padding-bottom: rem(90px);
+
+		@include w800_h600 {
+      padding-top: rem(32px);
+      padding-bottom: rem(32px);
+		}
   }
 
   &_start-btn {
@@ -84,7 +98,7 @@ export default {
       content: " ";
       position: absolute;
       right: 24%;
-      z-index: 1;
+      z-index: 10;
       display: inline-block;
       width: 52%;
       height: 100%;
@@ -105,13 +119,17 @@ export default {
         right: 17%;
         width: 66%;
       }
+
+      @include w800_h600 {
+        content: initial;
+      }
     }
   }
 
   &_img {
     position: absolute;
     right: 24%;
-    z-index: 10;
+    z-index: 100;
     display: inline-block;
     width: 52%;
 
@@ -128,6 +146,10 @@ export default {
     @include w1024_h768 {
       right: 17%;
       width: 66%;
+    }
+
+    @include w800_h600 {
+      box-shadow:0 0 rem(80px) rgba(39, 71, 144, 0.46);
     }
   }
 }

@@ -58,6 +58,10 @@ export default {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
+	@include w800_h600 {
+		flex-direction: column;
+	}
 }
 
 .slider {
@@ -73,6 +77,11 @@ export default {
 
 		@include w1280_h800 {
 			width: 40%;
+		}
+		
+		@include w800_h600 {
+			width: 100%;
+			text-align: center;
 		}
 	}
 
@@ -102,6 +111,11 @@ export default {
 		@include w1280_h800 {
 			font-size: rem(45px);
 		}
+
+		@include w800_h600 {
+      font-size: rem(40px);
+			padding-bottom: rem(20px);
+		}
 	}
 
 	&_text {
@@ -109,6 +123,10 @@ export default {
 		font-size: rem(18px);
 		color: #8492af;
 		padding-bottom: rem(40px);
+
+		@include w800_h600 {
+			padding-bottom: rem(10px);
+		}
 	}
 }
 

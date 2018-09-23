@@ -48,6 +48,10 @@ export default {
 	font-size: rem(18px);
 	color: #8492af;
 	padding: rem(50px) rem(0px);
+
+	@include w800_h600 {
+		padding: rem(20px) rem(0px);
+	}
 }
 
 .title {
@@ -56,5 +60,10 @@ export default {
 	font-size: rem(60px);
 	color: #0e1a35;
 	margin-top: rem(100px);
+
+	@include w800_h600 {
+      	font-size: rem(40px);
+		margin-top: rem(40px);
+	}
 }
 </style>

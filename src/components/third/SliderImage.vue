@@ -94,6 +94,10 @@ export default {
 	@include w1280_h800 {
     width: 60%;
 	}
+
+  @include w800_h600 {
+    width: 100%;
+  }
 }
 
 .column {

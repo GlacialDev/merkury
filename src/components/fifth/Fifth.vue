@@ -151,10 +151,10 @@ export default {
 		margin-bottom: rem(20px);
 	}
 
-    @include w1280_h800 {
+	@include w1280_h800 {
 		padding: rem(0px) rem(0px);
 		margin-bottom: rem(20px);
-    }
+	}
 }
 
 .text-after {
@@ -173,7 +173,6 @@ export default {
 	@include w1280_h800 {
 		width: 75%;
 	}
-
 }
 
 .join {

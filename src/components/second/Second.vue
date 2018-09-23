@@ -66,6 +66,7 @@ export default {
 @import '../mixins.scss';
 
 .wrapper {
+	z-index: 1;
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
 	display: flex;
@@ -90,20 +91,24 @@ export default {
 	justify-content: space-between;
 
     @include w1366_h768 {
-			padding: rem(250px) rem(50px) rem(160px) rem(50px);
-		}
+		padding: rem(250px) rem(50px) rem(160px) rem(50px);
+	}
 		
     @include w1024_h768 {
-			padding: rem(160px) rem(50px) rem(120px) rem(50px);
+		padding: rem(160px) rem(50px) rem(120px) rem(50px);
     }
 
     @include w1280_h800 {
-			padding: rem(250px) rem(0px) rem(60px) rem(0px);
+		padding: rem(250px) rem(0px) rem(60px) rem(0px);
     }
 
     @include w1024_h768 {
-			padding: rem(160px) rem(0px) rem(60px) rem(0px);
+		padding: rem(160px) rem(0px) rem(60px) rem(0px);
     }
+
+	@include w800_h600 {
+		padding: rem(32px) rem(0px) rem(32px) rem(0px);
+	}
 }
 
 .requires {
@@ -119,6 +124,11 @@ export default {
 		padding-bottom: rem(270px);
 	}
 
+	@include w800_h600 {
+		padding-left: 0;
+		padding-bottom: rem(60px);
+	}
+
 	&_title {
 		font-weight: 100;
 		font-size: rem(60px);
@@ -129,9 +139,9 @@ export default {
 			font-size: rem(45px);
 		}
 
-    @include w1280_h800 {
+		@include w1280_h800 {
 			font-size: rem(45px);
-    }
+		}
 	}
 
 	&_text {
@@ -175,6 +185,12 @@ export default {
 
 	@include w1280_h800 {
 		padding-bottom: rem(40px);
+	}
+
+	&_image {
+		@include w800_h600 {
+			height: rem(420px);
+		}
 	}
 }
 </style>
